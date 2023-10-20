@@ -1,0 +1,94 @@
+.planet-user {
+  width: 99%;
+  height: 9vw;
+  background-color: #061248;
+  border: 1px solid;
+  border-radius: 4vw;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+  padding: 1vw;
+
+  .left-div{
+    display: flex;
+    .index {
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      border: none;
+      background-color: transparent;
+      width: 7vw;
+      height: 7vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-family: "HiJack";
+    }
+    .images {
+      position: relative;
+      left: 4vw;
+      top: 3vw;
+      left: 6vw;
+  
+  
+      .helmet {
+        position: absolute;
+        z-index: 2;
+        bottom: 2vw;
+        left: -6vw;
+        width: 11vw;
+      }
+      .user {
+        top: -4vw;
+        left: -5vw;
+        position: absolute;
+        border-radius: 100%;
+        z-index: 1;
+        width: 9vw;
+      }
+      
+    }
+    .nameNLevel{
+      position: relative;
+      left: 10vw;
+      width: 15vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .level {
+        width: 12vw;
+      }
+      .name{
+        color: white;
+        font-size: 2vw;
+        position: relative;
+        right: -2vw;
+        width: 16vw;
+   
+        height: 3vw;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        text-align: left;
+      
+      }
+    }
+  }
+.right-div{
+    width: 14vw;
+    // border: 1px solid white;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    img{
+      width: 5vw;
+
+    }
+    span{
+      color: white;
+      font-size: 2vw;
+    }
+  }
+}

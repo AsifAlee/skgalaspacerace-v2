@@ -1,0 +1,346 @@
+.leaderboard-item {
+  // background-image: url("../assets/images/leaderboard-list-bg.png");
+  width: 90%;
+  // height: calcView(70);
+  background-size: 100% 100%;
+  // background-repeat: no-repeat;
+  // margin: calcView(15) auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-position: center;
+  font-size: 3vw;
+  .leftDiv {
+    display: flex;
+    align-items: center;
+    //   gap: calcView(15);
+    //   margin-left: calcView(10);
+    font-size: 3vw;
+    flex: 0 1 50%;
+    .rankIndex {
+      font-weight: 500;
+      width: 2vw;
+    }
+    span.name {
+      width: 10vw;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      height: 6vw;
+      line-height: 6vw;
+    }
+    .restUser {
+      // width: calcView(60);
+      border-radius: 100%;
+    }
+    .levelIcon {
+      width: 14.6666vw;
+      height: 4vw;
+      object-fit: contain;
+    }
+  }
+  .middle-div {
+    font-size: 2vw;
+    display: flex;
+    align-items: center;
+    flex: 0 1 30%;
+    flex-direction: column;
+    img {
+      width: 3vw;
+    }
+  }
+  .rightDiv {
+  }
+}
+.planet-lb-item {
+
+   width: 100%;
+  background-image: url("../images/figh-for-planet/leaderboard-strip.png");
+  height: 13vw;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 3vw;
+  position: relative;
+ 
+  .left {
+    display: flex;
+    align-items: center;
+    color: white;
+    position: relative;
+    left: -6vw;
+    img {
+      width: 16vw;
+      position: relative;
+      bottom: 2vw;
+      left: 4vw;
+  
+    }
+    .name {
+      width: 21vw;
+      height: 5vw;
+      border-radius: 2vw;
+      background-color: #251270;
+      font-family: "ROG";
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      left: 3vw;
+      p {
+        margin-top: -2vw;
+      }
+    }
+  }
+  .middle {
+    width: 26vw;
+    // border: 1px solid;
+    display: flex;
+    align-items: center;
+    .img1 {
+      width: 8vw;
+      position: relative;
+      z-index: 0;
+      left: 3vw;
+      border-radius: 100%;
+      border: 0.6vw solid yellow;
+    }
+    .img2 {
+      width: 8vw;
+      position: relative;
+      z-index: 0;
+      right: 3vw;
+      border-radius: 100%;
+      border: 0.6vw solid yellow;
+
+    }
+    .img3 {
+      width: 8vw;
+      position: relative;
+      z-index: 1;
+      right: 3vw;
+      border-radius: 100%;
+      right: 0;
+      border: 0.6vw solid yellow;
+
+    }
+  }
+  .right-div {
+    width: 20vw;
+    // border: 1px solid red;
+    // justify-content: end;
+    img {
+      width: 4vw;
+    }
+    span {
+      font-size: 3vw;
+      color: white;
+    }
+  }
+  .index {
+    img {
+    
+      width: 5vw;
+      position: absolute;
+      left: -6vw;
+      bottom: 4vw;
+    }
+  }
+}
+
+.gifttingboard-item {
+  // width: 90%;
+  height: 15vw;
+  background-image: url("../images/event-gifting/leaderboard-strip.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border: none;
+  background-color: transparent;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2vw;
+  margin-top: 2vw;
+
+  .leftDiv {
+    display: flex;
+    align-items: center;
+    .index {
+      font-family: "HiJack";
+      font-size: 3vw;
+      width: 6vw;
+    }
+    .users {
+      width: 8vw;
+      border-radius: 100%;
+      // border: 1px solid red;
+    }
+    .user-details {
+      display: flex;
+      flex-direction: column;
+      font-family: "Helvetica";
+      position: relative;
+      left: 3vw;
+      .name {
+        font-size: 2.7vw;
+        width: 15vw;
+
+        height: 4vw;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        text-align: left;
+      }
+      img {
+        width: 11vw;
+      }
+    }
+  }
+  .middleDiv {
+    font-family: "Helvetica";
+    background-color: #213270;
+    // width: 90%;
+    display: flex;
+    border-radius: 3vw;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    font-size: 2.5vw;
+    display: flex;
+    // height: 4vw;
+    padding: 2vw;
+    width: 21vw;
+    // height: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 2.5vw;
+    }
+    span {
+    }
+  }
+  .rightDiv {
+    font-family: "Helvetica";
+    padding-right: 3vw;
+    /* gap: 3vw; */
+    // border: 1px solid;
+    width: 20vw;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+
+    img {
+      width: 3vw;
+    }
+    span {
+      font-size: 3vw;
+    }
+  }
+}
+
+.gameboard-item {
+  display: flex;
+  align-items: center;
+  .index {
+    width: 10%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border: none;
+    background-color: transparent;
+    width: 7vw;
+    height: 7vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "HiJack";
+    img {
+      width: 5vw;
+    }
+  }
+  .lb-item {
+    width: 87%;
+    background-image: url("../images/figh-for-planet/leaderboard-strip.png");
+    height: 13vw;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 3vw;
+    margin-left: 2vw;
+
+    .left {
+      display: flex;
+      align-items: center;
+      color: white;
+      .images {
+        position: relative;
+
+        left: 4vw;
+        top: 0vw;
+        .rank {
+          position: absolute;
+          z-index: 2;
+          bottom: -5vw;
+          left: -6vw;
+          width: 14vw;
+        }
+
+        .user {
+          top: -6vw;
+          left: -3vw;
+          position: absolute;
+          border-radius: 100%;
+          z-index: 1;
+          width: 8vw;
+        }
+      }
+      .nameNlevel {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 13vw;
+        min-width: 20vw;
+        // border: 1px solid;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5vw;
+        .name {
+          padding: 2vw;
+          height: 5vw;
+          border-radius: 2vw;
+          background-color: #251270;
+          font-family: "ROG";
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 20vw;
+          p {
+            margin-top: -2vw;
+            font-size: 3vw;
+            text-overflow: ellipsis;
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+          }
+        }
+        img {
+          width: 10vw;
+        }
+      }
+    }
+
+    .right {
+    }
+  }
+}

@@ -1,0 +1,512 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+@font-face {
+  font-family: "HiJack";
+  src: local("HiJack"), url("./fonts/Hi\ Jack.ttf") format("truetype");
+}
+@font-face {
+  font-family: "ROG";
+  src: local("ROG"), url("./fonts/ROG.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Helvetica";
+  src: local("Helvetica"),
+    url("./fonts/Helvetica-Bold-Font.ttf") format("truetype");
+}
+button {
+  background: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none !important;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.d-flex {
+  display: flex;
+}
+.j-center {
+  justify-content: center;
+}
+.al-center {
+  align-items: center;
+}
+.f-col {
+  flex-direction: column;
+}
+.gameArea {
+  background-image: url("./images/figh-for-planet/game-area-selected.png");
+}
+.gameAreaUn {
+  background-image: url("./images/figh-for-planet/game-area-unselected.png");
+}
+
+.fightForPlanet {
+  background-image: url("./images/figh-for-planet/fight-for-selected.png");
+}
+.fightForPlanetUn {
+  background-image: url("./images/figh-for-planet/fight-for-unselected.png");
+}
+
+.giftingBoard {
+  background-image: url("./images/figh-for-planet/gifting-selected.png");
+}
+.giftingBoardUn {
+  background-image: url("./images/figh-for-planet/gifting-unselected.png");
+}
+.userSelect {
+  background-image: url("./images/event-gifting/user-selected.png");
+}
+.userUn {
+  background-image: url("./images/event-gifting/user-unselected.png");
+}
+.talentSelect {
+  background-image: url("./images/event-gifting/talent-selected.png");
+}
+.talentUn {
+  background-image: url("./images/event-gifting/talent-unselected.png");
+}
+
+.monthlySel {
+  background-image: url("./images/event-gifting/monthly-selcted.png");
+}
+
+.monthlyUn {
+  background-image: url("./images/event-gifting/monthly-unselcted.png");
+}
+.weeklySel {
+  background-image: url("./images/event-gifting/weekly-selcted.png");
+}
+
+.weeklyUn {
+  background-image: url("./images/event-gifting/weekly-unselcted.png");
+}
+.overallSel {
+  background-image: url("./images/event-gifting/overall-selcted.png");
+}
+
+.overallUn {
+  background-image: url("./images/event-gifting/overall-unselcted.png");
+}
+.round1Sel {
+  background-image: url("./images/figh-for-planet/round-1-selected.png");
+}
+.round1Un {
+  background-image: url("./images/figh-for-planet/round-1-unselected.png");
+}
+.round2Sel {
+  background-image: url("./images/figh-for-planet/round-2-selected.png");
+}
+.round2Un {
+  background-image: url("./images/figh-for-planet/round-2-unselected.png");
+}
+.round3Sel {
+  background-image: url("./images/figh-for-planet/final-selected.png");
+}
+.round3Un {
+  background-image: url("./images/figh-for-planet/finals-unselected.png");
+}
+
+.winnerSel {
+  background-image: url("./images/figh-for-planet/winner-selected.png");
+}
+.winnerUn {
+  background-image: url("./images/figh-for-planet/winner-selected.png");
+  filter: grayscale(1);
+}
+.runnerSel {
+  background-image: url("./images/figh-for-planet/runner-up-selected.png");
+}
+.runnerUn {
+  background-image: url("./images/figh-for-planet/runner-up-selected.png");
+  filter: grayscale(1);
+}
+
+.pr {
+  position: relative;
+}
+.pa {
+  position: absolute;
+}
+
+.showOverflow {
+  overflow-y: auto;
+}
+.hideOverflow {
+  overflow-y: hidden;
+}
+
+.eventGiftingRewards {
+  position: relative;
+  top: 23vw;
+  left: 5vw;
+}
+.eventGiftingRewards2 {
+  position: relative;
+  top: 29vw;
+  left: 5vw;
+}
+
+.game-marquee {
+  .marquee-item {
+    display: flex;
+    font-size: 2vw;
+    color: white;
+    background-image: url("../src/images/tickertape/tickertape-1a.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 11vw;
+    display: flex;
+    align-items: center;
+    padding: 2vw;
+    padding-left: 3vw;
+
+ .marq-user-img {
+      width: 7vw;
+      border: 2px solid yellow;
+      border-radius: 100%;
+  
+    }
+
+    .marq-user-details {
+      display: flex;
+      align-items: center;
+      font-size: 2.5vw;
+    .name {
+      margin-left: 0.5vw;
+      }
+      .rew-img {
+        width: 5vw;
+        position: relative;
+        bottom: 1vw;       
+      }
+      .bean-img {
+        width: 3vw;
+        display: inline-block;
+      }
+    }
+    .end-img{
+      width: 13vw;
+      position: relative;
+      bottom: 2vw;
+   
+  }
+}
+}
+.game-marquee2 {
+  .marquee-item {
+    display: flex;
+    font-size: 2vw;
+    color: white;
+    background-image: url("../src/images/tickertape/tickertape-2a.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 11vw;
+    display: flex;
+    align-items: center;
+    padding: 3vw;
+
+    padding-left: 3vw;
+
+
+ .marq-user-img {
+      width: 7vw;
+      border: 2px solid yellow;
+      border-radius: 100%;
+  
+    }
+
+    .marq-user-details {
+      display: flex;
+      align-items: center;
+      font-size: 2.5vw;
+    .name {
+       margin-left: 0.5vw;
+      }
+      .rew-img {
+        width: 5vw;
+        position: relative;
+        bottom: 1vw;       
+      }
+      .bean-img {
+        width: 3vw;
+        display: inline-block;
+      }
+    }
+    .end-img{
+      width: 13vw;
+      position: relative;
+      bottom: 2vw;
+   
+  }
+}
+}
+
+.indexBg {
+  background-image: url("./images/game-area/11up.png");
+}
+.bordered {
+  border: 1px solid red;
+}
+
+.seeMore {
+  width: 16vw;
+  height: 8vw;
+  background-image: url("./images/event-gifting/see-more.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  top: 3vw;
+}
+.seeLess {
+  width: 16vw;
+  height: 8vw;
+  background-image: url("./images/event-gifting/See-less.png");
+
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  top: 3vw;
+}
+
+.one {
+  background-image: url("./images/figh-for-planet/1st.png");
+}
+
+.two {
+  background-image: url("./images/figh-for-planet/2nd.png");
+}
+
+.three {
+  background-image: url("./images/figh-for-planet/3rd.png");
+}
+
+.four {
+  background-image: url("./images/figh-for-planet/4up.png");
+}
+
+.highlight {
+  background-color: yellow;
+  color: black;
+  padding: 0.2vw;
+  margin-right: 1vw;
+  margin-left: 1vw;
+}
+
+.noDataFound {
+  font-family: "HiJack";
+  color: white;
+  position: relative;
+  bottom: 105vw;
+}
+
+.gameNoDataFound {
+  font-family: "HiJack";
+  color: white;
+  position: relative;
+  bottom: 85vw;
+  // left: 32px;s
+}
+
+.blackNWhite {
+  filter: grayscale(1);
+}
+
+.game1 {
+  background-image: url("./images/meteor-bust.gif");
+}
+.game1Forever {
+  background-image: url("./images/meteor-bust-forever.gif");
+}
+
+.game2 {
+  background-image: url("./images/game2.gif");
+}
+.game2Forever {
+  background-image: url("./images/game2Forever.gif");
+}
+
+.game3 {
+  background-image: url("./images/game3.gif");
+}
+.game3Forever {
+  background-image: url("./images/game3forever.gif");
+}
+
+.game4 {
+  background-image: url("./images/game4.gif");
+}
+.game4Forever {
+  background-image: url("./images/game4For.gif");
+}
+
+.rights {
+  font-family: "ROG";
+  font-size: 4vw;
+  color: white;
+  position: relative;
+  bottom: 1vw;
+  width: 90%;
+  margin: 0 auto;
+  bottom: 2vw;
+}
+
+.shaking-text {
+  font-weight: bold;
+  animation: shake 0.3s ease-in-out;
+  background-color: red;
+  color: black;
+  text-align: center;
+
+  z-index: 1;
+    left: 9vw;
+    font-size: 2vw;
+    width: 20vw;
+    position: absolute;
+    top: 8vw;
+
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(5px);
+  }
+}
+
+
+.orangeSel{
+ background-image: url('./images/orange-selected.png');
+}
+
+.orangeUn{
+  background-image: url('./images/purple-unselcted.png');
+ }
+
+ .imgBtn{
+  width: 20vw;
+  height: 10vw;
+  background-color: transparent;
+  border: none;
+  background-size: 100% 100%;
+  font-family: 'HiJack';
+  color: white;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+
+ }
+
+ .flipped-div {
+  position: relative;
+}
+
+/* Create a mirrored pseudo-element */
+.flipped-div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  transform: scaleX(-1); /* Flip the pseudo-element horizontally */
+  background-image: none;
+}
+
+/* Ensure content is not flipped */
+.flipped-div > * {
+  transform: scaleX(1); /* Ensure content is not flipped horizontally */
+  position: absolute;
+  font-size: 2.5vw;
+  top: 2vw;
+  left: -1vw;
+
+
+
+
+}
+
+.div-span{
+  
+  position: absolute;
+  font-size: 2.5vw;
+  top: 4vw;
+  left: 2vw;
+
+
+
+
+}
+
+
+
+
+
+
+
+.myplaneSel{
+  background-image: url('./images/my-planet-selected.png');
+}
+
+.myplaneUn{
+  background-image: url('./images/my-planet-unselected.png');
+}
+
+.oppPlanetSel{
+  background-image: url('./images/opposite-planet-selected.png');
+
+}
+
+.oppPlanetUn{
+  background-image: url('./images/opposite-planet-unselected.png');
+
+}
+
+.noData-in-planet-info{
+  font-size: 3vw;
+    color: white;
+    font-family: 'HiJack';
+    position: relative;
+    top: 20vw;
+}
+
+
+.headerSvga{
+  position: absolute;
+  z-index: 0;
+  overflow: hidden;
+  height: 120vw;
+  width: 100%;
+  bottom: 0vw;
+
+}
+
+

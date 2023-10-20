@@ -1,0 +1,309 @@
+.event-gifting {
+  .gift-container {
+    // margin-top: 7vw;
+    width: 100%;
+    .gifts {
+      width: 95%;
+      height: 50vw;
+      margin: 0 auto;
+      position: relative;
+
+      .base {
+        width: 100%;
+        position: absolute;
+        display: block;
+        bottom: 0vw;
+      }
+      .tag {
+        position: absolute;
+        display: block;
+        bottom: 0;
+        width: 52vw;
+        left: 18vw;
+      }
+
+      .gift-component {
+        background-image: url("../images/event-gifting/gift-display-stage.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        border: none;
+        background-color: transparent;
+        width: 30vw;
+        height: 40vw;
+        position: absolute;
+        bottom: 8vw;
+        z-index: 1;
+
+        .title {
+          position: absolute;
+          width: 75%;
+          height: 9vw;
+          background-image: url("../images/event-gifting/gift-info-bg.png");
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+          border: none;
+          background-color: transparent;
+          bottom: -1vw;
+          left: 4vw;
+          color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          gap: 1vw;
+          .gift-name {
+            font-size: 3vw;
+          }
+
+          .amount {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            bottom: 1vw;
+            right: -1vw;
+
+            .price {
+              font-size: 3vw;
+            }
+            .giftBeans {
+              width: 4vw;
+            }
+          }
+        }
+
+        .gift-img{
+          width: 16vw;
+    position: relative;
+    top: 15vw;
+        }
+      }
+
+      .rank1 {
+        left: 0;
+      }
+
+      .rank2 {
+        left: 31vw;
+        bottom: 10vw;
+      }
+
+      .rank3 {
+        left: 59vw;
+      }
+    }
+  }
+  .beanspot-container {
+    .beans-pot {
+      position: relative;
+      width: 95%;
+      height: 57vw;
+      //   border: 1px solid yellow;
+      margin: 0 auto;
+      .beans-pot-img {
+        width: 84%;
+        height: 54vw;
+        background-image: url("../images/event-gifting/bean-pot.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        border: none;
+        background-color: transparent;
+        z-index: 1;
+        position: relative;
+        left: 5vw;
+        top: 1vw;
+
+        .beans-amt {
+          position: absolute;
+          font-size: 3vw;
+          color: wheat;
+          top: 40vw;
+          right: 9vw;
+          display: flex;
+          font-family: "HiJack";
+
+          span {
+          }
+          img {
+            width: 4vw;
+          }
+        }
+      }
+      .beanspot-base {
+        background-image: url("../images/event-gifting/stage.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        border: none;
+        background-color: transparent;
+        width: 100%;
+        height: 14vw;
+        position: absolute;
+        bottom: 0vw;
+        // left: 10vw;
+        z-index: 0;
+
+        .beans-pot-tag {
+          width: 68vw;
+          position: relative;
+          top: 5vw;
+        }
+      }
+    }
+  }
+  .rewards-container {
+    color: white;
+    height: 81vw;
+    .rew-banner {
+      width: 74vw;
+      position: relative;
+      bottom: 4vw;
+    }
+    .rewards-tabs {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      position: relative;
+      z-index: 1;
+      top: "7vw";
+    }
+
+    .user-rewards {
+      .inner-tabs {
+        // border: 1px solid red;
+        background-image: url("../images/event-gifting/sub-buttons-bg.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        border: none;
+        background-color: transparent;
+        width: 53%;
+        height: 11vw;
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        bottom: 16vw;
+        z-index: 3;
+      }
+
+      .rewards-container {
+        background-image: url("../images/figh-for-planet/display-box.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        border: none;
+        background-color: transparent;
+        width: 100%;
+        height: 75vw;
+        position: relative;
+        top: -32vw;
+      }
+    }
+  }
+
+
+  .leaderboard {
+    .leaderboard-banner {
+      width: 70%;
+      display: block;
+      margin: 0 auto;
+    }
+    .leaderbrd-main-tabs {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+    .leaderboard-container {
+      .userLeaderboard {
+        .inner-tabs {
+          background-image: url("../images/event-gifting/sub-buttons-bg.png");
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+          border: none;
+          background-color: transparent;
+          width: 53%;
+          height: 11vw;
+          display: block;
+          margin: 0 auto;
+          position: relative;
+          bottom: 12vw;
+          z-index: 3;
+        }
+      }
+      .board {
+        width: 96%;
+        height: 192vw;
+        background-image: url("../images/event-gifting/event-gfting-leaderboard.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        border: none;
+        background-color: transparent;
+        margin: 0 auto;
+        position: relative;
+        bottom: 12vw;
+        padding-top: 6vw;
+
+        .topper-section {
+          position: relative;
+          top: 6vw;
+          height: 54vw;
+        }
+
+        .restWinners {
+          height: 120vw;
+          gap: 2vw;
+
+          width: 92%;
+          position: relative;
+          left: 3vw;
+          padding-left: 1vw;
+          padding-right: 2vw;
+
+          overflow-y: auto;
+        }
+
+        .restWinners::-webkit-scrollbar {
+          width: 1vw;
+          background-color: gray;
+        }
+
+        /* Track */
+        .restWinners::-webkit-scrollbar-track {
+          box-shadow: inset 0 0 5px grey;
+          border-radius: 1vw;
+        }
+
+        /* Handle */
+        .restWinners::-webkit-scrollbar-thumb {
+          background: white;
+          border-radius: 2vw;
+        }
+
+        /* Handle on hover */
+        .restWinners::-webkit-scrollbar-thumb:hover {
+          background: #b30000;
+        }
+
+        .seeMore {
+          width: 16vw;
+          height: 8vw;
+          background-image: url("../images/event-gifting/see-more.png");
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          border: none;
+          background-color: transparent;
+          position: relative;
+          top: 0vw;
+        }
+        .seeLess {
+          width: 16vw;
+          height: 8vw;
+          background-image: url("../images/event-gifting/See-less.png");
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          border: none;
+          background-color: transparent;
+          position: relative;
+          top: 0vw;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,903 @@
+.fight-for-planet {
+  .join-title {
+    background-image: url("../images/figh-for-planet/join-planet-gif.gif");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border: none;
+    background-color: transparent;
+    width: 97%;
+    height: 20vw;
+    position: relative;
+    z-index: 1;
+  }
+
+  .info {
+    background-image: url("../images/figh-for-planet/display-box.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border: none;
+    background-color: transparent;
+    width: 97%;
+    height: 65vw;
+    position: relative;
+    margin: 0 auto;
+    z-index: 0;
+    bottom: 19vw;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-family: "HiJack";
+    font-size: 3vw;
+
+    img {
+      width: 90vw;
+    }
+  }
+
+  .orange-info {
+    background-image: url("../images/figh-for-planet/orange-info-bg.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border: none;
+    background-color: transparent;
+    width: 97%;
+    height: 20vw;
+    font-size: 3vw;
+    color: white;
+    font-family: "HiJack";
+    margin-top: -20vw;
+
+    p {
+      width: 80%;
+      font-size: 3vw;
+      text-align: center;
+    }
+  }
+
+  .planet-row {
+    background-image: url("../images/figh-for-planet/display-box-1.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border: none;
+    background-color: transparent;
+    width: 84%;
+    height: 40vw;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .joined-planet {
+    .tabs {
+      width: 90%;
+      height: 20vw;
+      background-image: url("../images/figh-for-planet/button-stage.png");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      gap: 1vw;
+      margin-top: 8vw;
+
+      .myplanet {
+        background-image: url("../images/figh-for-planet/planet-update.gif");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 58%;
+        height: 12vw;
+        background-color: transparent;
+        border: none;
+      }
+
+      .schedule {
+        background-image: url("../images/figh-for-planet/schedule-button.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 20vw;
+        height: 12vw;
+        background-color: transparent;
+        border: none;
+      }
+    }
+
+    .current-match {
+      position: relative;
+      top: -7vw;
+      font-size: 3vw;
+
+      .schedule {
+        width: 50vw;
+        height: 14vw;
+        z-index: 1;
+        position: relative;
+        right: -37vw;
+        // border: 1px solid red;
+        top: 4vw;
+
+        img {
+          width: 44vw;
+          position: absolute;
+          left: 1vw;
+        }
+        .match-info {
+          width: 43vw;
+          height: 14vw;
+          position: absolute;
+          left: 15vw;
+
+          background-image: url("../images/game-area/input-bg.png");
+          background-color: transparent;
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          color: white;
+          font-size: 3vw;
+        }
+      }
+
+      .base {
+        position: absolute;
+        right: 0vw;
+        top: 10vw;
+        z-index: 0;
+        width: 66vw;
+      }
+    }
+
+    .planets-overlay {
+      width: 100%;
+      height: 40vw;
+      // border: 1px solid yellowgreen;
+      overflow: hidden;
+    }
+
+    .match-started-info {
+      width: 90%;
+      // height: 30vw;
+      background-image: url("../images/figh-for-planet/info-bg.gif");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-color: transparent;
+      border: none;
+      margin: 0 auto;
+      padding: 6vw;
+      font-family: "ROG";
+      color: white;
+      font-size: 3vw;
+      line-height: 1.5;
+      padding-left: 7vw;
+
+      img {
+        width: 5vw;
+        position: relative;
+        top: 2vw;
+      }
+    }
+
+    .rewards {
+      background-image: url("../images/figh-for-planet/reward-bg.png");
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      border: none;
+      background-color: transparent;
+      width: 97%;
+      height: 65vw;
+      position: relative;
+      margin: 0 auto;
+
+      .slider-container {
+        position: relative;
+        // border: 1px solid red;
+        top: 22vw;
+        width: 74%;
+        margin: 0 auto;
+        right: -3vw;
+      }
+    }
+
+    .match-banner {
+      width: 87%;
+      height: 18vw;
+      background-image: url("../images/figh-for-planet/my-match-banner.png");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-color: transparent;
+      border: none;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+      bottom: 2vw;
+
+      .title {
+        position: absolute;
+        color: white;
+        font-size: 2vw;
+        top: 7vw;
+        left: 36vw;
+        font-family: "HiJack";
+        font-size: 3vw;
+      }
+
+      .startTime {
+        position: absolute;
+        color: white;
+        font-size: 2vw;
+        top: 9vw;
+        left: 33vw;
+      }
+      .endTime {
+        position: absolute;
+        color: white;
+        font-size: 2vw;
+        top: 11vw;
+        left: 30vw;
+      }
+    }
+
+    .match-layout {
+      width: 100%;
+      height: 45vw;
+      background-image: url("../images/figh-for-planet/game-bg.png");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-color: transparent;
+      border: none;
+      margin: 0 auto;
+      position: relative;
+      top: -12vw;
+      z-index: 1;
+      .match-base {
+        width: 95%;
+        position: absolute;
+        bottom: -14vw;
+        left: 3vw;
+      }
+
+      .my-rocket {
+        width: 25vw;
+        height: 25vw;
+        background-image: url("../images/event-gifting/rank-display-bg.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-color: transparent;
+        border: none;
+        position: relative;
+        z-index: 3;
+        left: 21vw;
+        top: 29vw;
+        img {
+          position: absolute;
+          width: 23vw;
+          // top: 28vw;
+          left: 0vw;
+        }
+      }
+      .opp-rocket {
+        width: 25vw;
+        height: 25vw;
+        background-image: url("../images/event-gifting/rank-display-bg.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-color: transparent;
+        border: none;
+        position: relative;
+        z-index: 3;
+        right: 22vw;
+        top: 28vw;
+        position: absolute;
+        img {
+          position: absolute;
+          width: 23vw;
+          // top: 28vw;
+          left: 0vw;
+        }
+      }
+      .my-team {
+        .me {
+          width: 22vw;
+          position: absolute;
+          left: 7vw;
+          top: 8vw;
+          z-index: 2;
+          pointer-events: none;
+        }
+        .my-firepower {
+          background-image: url("../images/figh-for-planet/match-firepower-bg.png");
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          background-color: transparent;
+          border: none;
+          font-size: 1.8vw;
+          position: absolute;
+
+          top: 23vw;
+          left: 25vw;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          font-family: "Helvetica";
+          color: white;
+          padding: 1vw;
+          width: 29vw;
+          min-height: 8vw;
+          justify-content: center;
+
+          .firepower {
+            display: flex;
+            align-items: center;
+            img {
+              width: 4vw;
+            }
+            span {
+              font-size: 2vw;
+              position: relative;
+              top: 0.5vw;
+            }
+          }
+          .leftArr {
+            width: 4vw;
+            position: absolute;
+            left: 0;
+          }
+        }
+        .my-team-user {
+          position: absolute;
+          width: 12vw;
+          left: 12vw;
+          top: 9vw;
+        }
+      }
+
+      .my-opp-team {
+        .opp {
+          width: 22vw;
+          position: absolute;
+          top: 8vw;
+          z-index: 2;
+          pointer-events: none;
+          right: 9vw;
+        }
+        .opp-firepower {
+          background-image: url("../images/figh-for-planet/match-firepower-bg.png");
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          background-color: transparent;
+          border: none;
+          font-size: 1.8vw;
+          position: absolute;
+          top: 15vw;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          font-family: "Helvetica";
+          color: white;
+          padding: 1vw;
+          min-width: 29vw;
+          min-height: 8vw;
+          justify-content: center;
+          right: 27vw;
+
+          .firepower {
+            display: flex;
+            align-items: center;
+            img {
+              width: 4vw;
+            }
+            span {
+              font-size: 2vw;
+              position: relative;
+              top: 0.5vw;
+            }
+          }
+          .leftArr {
+            width: 4vw;
+            position: absolute;
+            left: 0;
+          }
+        }
+        .opp-team-user {
+          position: absolute;
+          width: 12vw;
+          top: 9vw;
+          right: 14vw;
+        }
+
+        .planet-name {
+          width: 29vw;
+          height: 6vw;
+          background-image: url("../images/figh-for-planet/planet-info-button.png");
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+          border: none;
+          background-color: transparent;
+          right: 27vw;
+          top: 10vw;
+          position: absolute;
+
+          span {
+            color: white;
+            position: relative;
+            font-size: 3vw;
+            // top: 1vw;
+          }
+        }
+      }
+    }
+
+    .leader-board-sec {
+      .banner {
+        width: 80%;
+      }
+
+      .leaderboard {
+        background-image: url("../images/figh-for-planet/leaderboard-bg.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 95%;
+        // height: 63vw;
+        background-color: transparent;
+        border: none;
+        margin: 0 auto;
+        padding: 4vw;
+        display: flex;
+        flex-direction: column;
+        gap: 2vw;
+      }
+    }
+  }
+
+  .fight-bw-planets {
+    margin-top: 6vw;
+    .rewards {
+      background-image: url("../images/figh-for-planet/reward-bg.png");
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      border: none;
+      background-color: transparent;
+      width: 97%;
+      height: 80vw;
+      position: relative;
+      margin: 0 auto;
+      .rewards-tabs {
+        position: absolute;
+        left: 13vw;
+        .round1 {
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+          border: none;
+          background-color: transparent;
+          width: 17vw;
+          height: 9vw;
+          position: relative;
+          top: 23vw;
+          left: 13vw;
+        }
+        .round2 {
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+          border: none;
+          background-color: transparent;
+          width: 17vw;
+          height: 9vw;
+          position: relative;
+          top: 23vw;
+          left: 13vw;
+        }
+        .round3 {
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+          border: none;
+          background-color: transparent;
+          width: 17vw;
+          height: 9vw;
+          position: relative;
+          top: 23vw;
+          left: 13vw;
+        }
+      }
+
+      .slider-container {
+        position: relative;
+        top: 35vw;
+        width: 74%;
+        margin: 0 auto;
+        right: -3vw;
+      }
+    }
+    .meVsOpp {
+      width: 98%;
+      height: 50vw;
+      position: relative;
+
+      .vs {
+        width: 20vw;
+        position: absolute;
+        left: 41vw;
+        top: 6vw;
+      }
+
+      .base {
+        width: 100%;
+        position: absolute;
+        bottom: 0vw;
+        left: 1vw;
+      }
+
+      .myPlanet {
+        width: 30vw;
+        height: 25vw;
+
+        position: absolute;
+        top: 21vw;
+        z-index: 1;
+        left: 5vw;
+
+        .myinfo {
+          width: 40vw;
+          height: 12vw;
+          background-image: url("../images/figh-for-planet/match-firepower-bg.png");
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+          border: none;
+          background-color: transparent;
+          font-family: "HiJack";
+          display: inline-block;
+          position: relative;
+          bottom: 21vw;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          span {
+            color: white;
+            font-size: 2.5vw;
+          }
+
+          .strength {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: yellow;
+
+            img {
+              width: 5vw;
+            }
+          }
+        }
+        .imageDiv {
+          width: 35vw;
+          height: 35vw;
+          background-image: url("../images/event-gifting/gift-display-stage.png");
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+          border: none;
+          background-color: transparent;
+          font-family: "HiJack";
+          display: inline-block;
+          position: relative;
+          bottom: 26vw;
+
+          img {
+            width: 26vw;
+            position: relative;
+            top: 6vw;
+          }
+        }
+      }
+      .oopPlanet {
+        width: 30vw;
+        height: 25vw;
+
+        position: absolute;
+        top: 21vw;
+        z-index: 1;
+        right: 11vw;
+
+        .myinfo {
+          width: 40vw;
+          height: 12vw;
+          background-image: url("../images/figh-for-planet/match-firepower-bg.png");
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+          border: none;
+          background-color: transparent;
+          font-family: "HiJack";
+          display: inline-block;
+          position: relative;
+          bottom: 21vw;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          span {
+            color: white;
+            font-size: 2.5vw;
+          }
+          .strength {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: yellow;
+
+            img {
+              width: 5vw;
+            }
+       
+          }
+        }
+        .imageDiv {
+          width: 35vw;
+          height: 35vw;
+          background-image: url("../images/event-gifting/gift-display-stage.png");
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+          border: none;
+          background-color: transparent;
+          font-family: "HiJack";
+          display: inline-block;
+          position: relative;
+          bottom: 26vw;
+
+          img {
+            width: 26vw;
+            position: relative;
+            top: 6vw;
+          }
+        }
+      }
+    }
+    .winners-btn {
+      position: relative;
+      top: -1vw;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .beanspot-container {
+      .beans-pot {
+        position: relative;
+        width: 95%;
+        height: 49vw;
+        //   border: 1px solid yellow;
+        margin: 0 auto;
+        .beans-pot-img {
+          width: 83%;
+          height: 50vw;
+          background-image: url("../images/event-gifting/bean-pot.png");
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+          border: none;
+          background-color: transparent;
+          z-index: 1;
+          position: relative;
+          left: 8vw;
+          top: -3vw;
+
+          .beans-amt {
+            position: absolute;
+            font-size: 3vw;
+            color: wheat;
+            top: 37vw;
+            right: 9vw;
+            display: flex;
+            font-family: "HiJack";
+
+            span {
+            }
+            img {
+              width: 4vw;
+            }
+          }
+        }
+        .beanspot-base {
+          background-image: url("../images/event-gifting/stage.png");
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+          border: none;
+          background-color: transparent;
+          width: 100%;
+          height: 14vw;
+          position: absolute;
+          bottom: 0vw;
+          // left: 10vw;
+          z-index: 0;
+
+          .beans-pot-tag {
+            width: 68vw;
+            position: relative;
+            top: 5vw;
+          }
+        }
+      }
+    }
+
+    .est-info{
+      background-image: url("../images/figh-for-planet/orange-info-bg.png");
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      border: none;
+      background-color: transparent;
+      width: 97%;
+      height: 20vw;
+      font-size: 3vw;
+      color: white;
+      font-family: "HiJack";
+      display: flex;
+      justify-content: center;
+      align-items: center;
+ 
+  
+      p {
+        width: 80%;
+        font-size: 3vw;
+        text-align: center;
+      }
+
+    }
+
+    .leader-board-sec {
+      .banner {
+        width: 80%;
+      }
+
+      .round-tabs {
+        display: flex;
+        justify-content: center;
+        gap: 6vw;
+    
+        .round1 {
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+          border: none;
+          background-color: transparent;
+          width: 17vw;
+          height: 9vw;
+
+        }
+        .round2 {
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+          border: none;
+          background-color: transparent;
+          width: 17vw;
+          height: 9vw;
+       
+        }
+        .round3 {
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+          border: none;
+          background-color: transparent;
+          width: 17vw;
+          height: 9vw;
+     
+        }
+      }
+      .leaderbrd-main-tabs {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+
+      .leaderboard {
+        background-image: url("../images/event-gifting/event-gfting-leaderboard.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 95%;
+        // height: 63vw;
+        background-color: transparent;
+        border: none;
+        margin: 0 auto;
+        padding: 4vw;
+        display: flex;
+        flex-direction: column;
+        gap: 2vw;
+
+        position: relative;
+      
+
+        .topper-section {
+          height: 54vw;
+          position: relative;
+          right: 3vw;
+        }
+
+        .restWinners {
+          height: 137vw;
+          gap: 2vw;
+
+          width: 97%;
+          position: relative;
+          left: 3vw;
+          padding-left: 1vw;
+          padding-right: 2vw;
+
+          overflow-y: auto;
+        }
+
+        .restWinners::-webkit-scrollbar {
+          width: 1vw;
+          background-color: gray;
+        }
+
+        /* Track */
+        .restWinners::-webkit-scrollbar-track {
+          box-shadow: inset 0 0 5px grey;
+          border-radius: 1vw;
+        }
+
+        /* Handle */
+        .restWinners::-webkit-scrollbar-thumb {
+          background: white;
+          border-radius: 2vw;
+        }
+
+        /* Handle on hover */
+        .restWinners::-webkit-scrollbar-thumb:hover {
+          background: #b30000;
+        }
+
+        .seeMore {
+          width: 16vw;
+          height: 8vw;
+          background-image: url("../images/event-gifting/see-more.png");
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          border: none;
+          background-color: transparent;
+          position: relative;
+
+          top: 6vw;
+          left: 41vw;
+        }
+        .seeLess {
+          width: 16vw;
+          height: 8vw;
+          background-image: url("../images/event-gifting/See-less.png");
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          border: none;
+          background-color: transparent;
+          position: relative;
+
+          top: 6vw;
+          left: 41vw;
+        }
+      }
+    }
+
+    .wild-card-round {
+      .info {
+        background-image: url("../images/figh-for-planet/display-box.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        border: none;
+        background-color: transparent;
+        width: 97%;
+        height: 65vw;
+        position: relative;
+        margin: 0 auto;
+        z-index: 0;
+        bottom: 19vw;
+        display: flex;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        font-family: "HiJack";
+        font-size: 3vw;
+
+        img {
+          width: 70vw;
+          position: relative;
+          top: 3vw;
+          left: 2vw;
+        }
+      }
+    }
+  }
+}
